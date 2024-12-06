@@ -66,47 +66,49 @@ This file provides the annotation of **PU.1 peaks** identified in ChIP-Seq data.
 ## How to Use
 
 ### 1. Clone the repository
+To start, clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
 
-2. Install required R packages
+### 2. Install required R packages
 
-install.packages(c("Seurat", "dplyr", "ggplot2", "DESeq2"))
+Make sure the necessary R packages are installed before running the scripts:
+```R
+install.packages(c("Seurat", "dplyr", "ggplot2"))
 
-3. Run the scripts in R or RStudio
+### 3. Run the scripts in R or RStudio
 
-	•	For bulk RNA-Seq analysis:
-
+Follow the steps below to execute the scripts:
+	•For bulk RNA-Seq analysis:
+```R
 source("main_137_DiffGenes.R")
 
 
-	•	For scRNA-Seq analysis:
-
+	•For scRNA-Seq analysis:
+```R
 source("Mir137_scRNA.R")
 
-Outputs
+### Outputs
 
 RNA-Seq
 
-	•	Differential gene expression tables.
-	•	Heatmaps and volcano plots.
+	•Differential gene expression tables.
+	•Heatmaps and volcano plots.
 
 scRNA-Seq
 
-	•	Filtered cell datasets.
-	•	PCA plots and clustering visualizations.
-	•	Marker gene tables for identified clusters.
+	•Filtered cell datasets.
+	•PCA plots and clustering visualizations.
+	•Marker gene tables for identified clusters.
 
 ATAC-Seq and ChIP-Seq
 
-	•	Annotated ATAC peaks for Mir137 cKO.
-	•	De novo and known motif discovery results from HOMER.
-	•	Annotated PU.1 peaks from ChIP-Seq.
+	•Annotated ATAC peaks for Mir137 cKO.
+	•De novo and known motif discovery results from HOMER.
+	•Annotated PU.1 peaks from ChIP-Seq.
 
 Notes
 
-	•	Ensure that the input data is in the correct format as specified in the scripts and HOMER documentation.
-	•	Modify script parameters (e.g., filtering thresholds, clustering resolution) as needed for your specific dataset.
-
-你可以直接将此内容保存为 `README.md` 文件并上传到 GitHub。需要进一步调整或者补充内容随时告诉我！
+	•Ensure that the input data is in the correct format as specified in the scripts and HOMER documentation.
+	•Modify script parameters (e.g., filtering thresholds, clustering resolution) as needed for your specific dataset.
