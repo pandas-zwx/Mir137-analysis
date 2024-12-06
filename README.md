@@ -2,75 +2,71 @@
 
 This repository contains R scripts and analysis outputs for various sequencing data, including bulk RNA-Seq, single-cell RNA-Seq (scRNA-Seq), ATAC-Seq, and ChIP-Seq. These resources are aimed at performing data preprocessing, quality control, feature annotation, motif discovery, and clustering analysis.
 
-Scripts Overview
+---
 
-1. main_137_DiffGenes.R
+## Scripts Overview
 
-Purpose
-
+### 1. **main_137_DiffGenes.R**
+#### Purpose
 This script is designed for analyzing bulk RNA-Seq data, including differential gene expression analysis.
 
-Key Features
+#### Key Features
+- Reads in bulk RNA-Seq count data from cutdiff.
+- Performs data normalization and quality control.
+- Conducts differential gene expression analysis using statistical methods.
+- Outputs visualizations such as heatmaps and volcano plots.
 
-	•	Reads in bulk RNA-Seq count data from cutdiff analysis.
-	•	Performs data normalization and quality control.
-	•	Conducts differential gene expression analysis using statistical methods.
-	•	Outputs visualizations such as heatmaps and volcano plots.
+---
 
-2. Mir137_scRNA.R
-
-Purpose
-
+### 2. **Mir137_scRNA.R**
+#### Purpose
 This script focuses on single-cell RNA-Seq (scRNA-Seq) data analysis, with specific functionalities for data preprocessing, cell clustering, and marker identification.
 
-Key Features
+#### Key Features
+- Filters low-quality cells based on predefined criteria (e.g., mitochondrial gene expression, total UMIs).
+- Normalizes and scales the scRNA-Seq data.
+- Performs principal component analysis (PCA) for dimensionality reduction.
+- Finds marker genes for each cell cluster.
+- Annotates cell clusters based on marker genes and biological knowledge.
 
-	•	Filters low-quality cells based on predefined criteria (e.g., mitochondrial gene expression, total UMIs).
-	•	Normalizes and scales the scRNA-Seq data.
-	•	Performs principal component analysis (PCA) for dimensionality reduction.
-	•	Finds marker genes for each cell cluster.
-	•	Annotates cell clusters based on marker genes and biological knowledge.
+---
 
-Data Files Overview
+## Data Files Overview
 
-1. cKO_specific_peaks_annotated.xls
+### 1. **cKO_specific_peaks_annotated.xls**
+#### Description
+This file contains the annotation of ATAC peaks specific to **Mir137 cKO** samples, generated using **HOMER**. It provides information about genomic regions and features associated with these peaks.
 
-Description
+### 2. **homerResults.html**
+#### Description
+This file contains results from a **de novo motif search** performed using **HOMER**. It identifies novel motifs enriched in the provided ATAC-Seq data.
 
-This file contains the annotation of ATAC peaks specific to Mir137 cKO samples, generated using HOMER. It provides information about genomic regions and features associated with these peaks.
+### 3. **knownResults.html**
+#### Description
+This file contains results from a **known motif search** performed using **HOMER**. It identifies motifs from a known database that are enriched in the provided ATAC-Seq data.
 
-2. homerResults.html
+### 4. **Pu.1_target_broad_annotated.xls**
+#### Description
+This file provides the annotation of **PU.1 peaks** identified in ChIP-Seq data. It highlights genomic regions and features associated with PU.1 binding sites.
 
-Description
+---
 
-This file contains results from a de novo motif search performed using HOMER. It identifies novel motifs enriched in the provided ATAC-Seq data.
+## Requirements
 
-3. knownResults.html
+- **R version**: ≥ 4.0.0
+- **Required Packages**:
+  - `Seurat`
+  - `dplyr`
+  - `ggplot2`
+  - `HOMER` (for motif discovery and ATAC-Seq/ChIP-Seq annotation)
+  - Additional packages as specified in the script headers.
 
-Description
+---
 
-This file contains results from a known motif search performed using HOMER. It identifies motifs from a known database that are enriched in the provided ATAC-Seq data.
+## How to Use
 
-4. Pu.1_target_broad_annotated.xls
-
-Description
-
-This file provides the annotation of PU.1 peaks identified in ChIP-Seq data. It highlights genomic regions and features associated with PU.1 binding sites.
-
-Requirements
-
-	•	R version: ≥ 4.0.0
-	•	Required Packages:
-	•	Seurat
-	•	dplyr
-	•	ggplot2
-	•	HOMER (for motif discovery and ATAC-Seq/ChIP-Seq annotation)
-	•	Additional packages as specified in the script headers.
-
-How to Use
-
-1. Clone the repository
-
+### 1. Clone the repository
+```bash
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
 
@@ -113,4 +109,4 @@ Notes
 	•	Ensure that the input data is in the correct format as specified in the scripts and HOMER documentation.
 	•	Modify script parameters (e.g., filtering thresholds, clustering resolution) as needed for your specific dataset.
 
-Let me know if you have any further questions or additional details to include!
+你可以直接将此内容保存为 `README.md` 文件并上传到 GitHub。需要进一步调整或者补充内容随时告诉我！
