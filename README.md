@@ -81,35 +81,35 @@ install.packages(c("Seurat", "dplyr", "ggplot2"))
 ### 3. Run the scripts in R or RStudio
 
 Follow the steps below to execute the scripts:
-	•For bulk RNA-Seq analysis:
+#### For bulk RNA-Seq analysis:
 ```R
 source("main_137_DiffGenes.R")
 ```
 
-	•For scRNA-Seq analysis:
+#### For scRNA-Seq analysis:
 ```R
 source("Mir137_scRNA.R")
 ```
 ### Outputs
 
-RNA-Seq
+#### RNA-Seq
 
 	•Differential gene expression tables.
 	•Heatmaps and volcano plots.
 
-scRNA-Seq
+#### scRNA-Seq
 
 	•Filtered cell datasets.
 	•PCA plots and clustering visualizations.
 	•Marker gene tables for identified clusters.
 
-ATAC-Seq and ChIP-Seq
+#### ATAC-Seq and ChIP-Seq
 
 	•Annotated ATAC peaks for Mir137 cKO.
 	•De novo and known motif discovery results from HOMER.
 	•Annotated PU.1 peaks from ChIP-Seq.
 
-Notes
+### Notes
 
 	•Ensure that the input data is in the correct format as specified in the scripts and HOMER documentation.
 	•Modify script parameters (e.g., filtering thresholds, clustering resolution) as needed for your specific dataset.
