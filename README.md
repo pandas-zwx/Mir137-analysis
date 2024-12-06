@@ -70,25 +70,26 @@ To start, clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
+```
 
 ### 2. Install required R packages
 
 Make sure the necessary R packages are installed before running the scripts:
 ```R
 install.packages(c("Seurat", "dplyr", "ggplot2"))
-
+```
 ### 3. Run the scripts in R or RStudio
 
 Follow the steps below to execute the scripts:
 	•For bulk RNA-Seq analysis:
 ```R
 source("main_137_DiffGenes.R")
-
+```
 
 	•For scRNA-Seq analysis:
 ```R
 source("Mir137_scRNA.R")
-
+```
 ### Outputs
 
 RNA-Seq
