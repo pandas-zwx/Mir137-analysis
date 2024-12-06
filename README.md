@@ -8,8 +8,8 @@ Scripts Overview
 
 	•	Purpose: This script is designed for analyzing bulk RNA-Seq data, including differential gene expression analysis.
 	•	Key Features:
-	•	Reads in bulk RNA-Seq count data.
-	•	Performs data normalization and quality control.
+	•	Reads in bulk RNA-Seq count data from cutdiff analysis.
+	•	Performs data normalization and quality control(FPKM2TPM.R).
 	•	Conducts differential gene expression analysis using statistical methods.
 	•	Outputs visualizations such as heatmaps and volcano plots.
 
@@ -31,7 +31,6 @@ Requirements
 	•	Seurat
 	•	dplyr
 	•	ggplot2
-	•	DESeq2 (for bulk RNA-Seq)
 	•	Additional packages as specified in the script headers.
 
 How to Use
