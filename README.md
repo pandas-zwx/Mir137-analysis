@@ -49,6 +49,11 @@ This file contains results from a **known motif search** performed using **HOMER
 #### Description
 This file provides the annotation of **PU.1 peaks** identified in ChIP-Seq data. It highlights genomic regions and features associated with PU.1 binding sites.
 
+### 5. **TargetScan7.1__miR-137-3p.predicted_targets.xlsx**
+This file contains the predicted targets of miR-137, provided by TargetScan. The data can be accessed via the following link:
+```
+https://www.targetscan.org/cgibin/targetscan/mmu_71/targetscan.cgi?species=Mouse&gid=&mir_sc=&mir_c=&mir_nc=&mir_vnc=&mirg=miR-137-3p
+```
 ---
 
 ## Requirements
