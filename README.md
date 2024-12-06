@@ -94,22 +94,22 @@ source("Mir137_scRNA.R")
 
 #### RNA-Seq
 
-	•Differential gene expression tables.
-	•Heatmaps and volcano plots.
+- Differential gene expression tables.
+- Heatmaps and volcano plots.
 
 #### scRNA-Seq
 
-	•Filtered cell datasets.
-	•PCA plots and clustering visualizations.
-	•Marker gene tables for identified clusters.
+- Filtered cell datasets.
+- PCA plots and clustering visualizations.
+- Marker gene tables for identified clusters.
 
 #### ATAC-Seq and ChIP-Seq
 
-	•Annotated ATAC peaks for Mir137 cKO.
-	•De novo and known motif discovery results from HOMER.
-	•Annotated PU.1 peaks from ChIP-Seq.
+- Annotated ATAC peaks for Mir137 cKO.
+- De novo and known motif discovery results from HOMER.
+- Annotated PU.1 peaks from ChIP-Seq.
 
 ### Notes
 
-	•Ensure that the input data is in the correct format as specified in the scripts and HOMER documentation.
-	•Modify script parameters (e.g., filtering thresholds, clustering resolution) as needed for your specific dataset.
+- Ensure that the input data is in the correct format as specified in the scripts and HOMER documentation.
+- Modify script parameters (e.g., filtering thresholds, clustering resolution) as needed for your specific dataset.
